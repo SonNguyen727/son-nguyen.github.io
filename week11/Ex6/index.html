@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body onload="update()">
+<form name="frmCal">
+    <table border="0" align="center">
+        <tr><td colspan="2" align="center">
+            <h2>MINI CALCULATOR</h2></td></tr>
+        <tr><td align="right">a = </td>
+            <td><input name="txta" /></td></tr>
+        <tr><td align="right">b = </td>
+            <td><input name="txtb" /></td></tr>
+        <tr><td align="right">Operator: </td>
+            <td><select name="slto">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+        </td></tr>
+        <tr><td align="right">Result: </td>
+            <td><input name="txtr" readonly /></td></tr>
+        <tr><td colspan="2" align="center">
+            <input type="button" value="Calculate"
+                onClick="calculate()">
+        </td></tr>
+    </table>
+</form>
+</body>
+</html>
